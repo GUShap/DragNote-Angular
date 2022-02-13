@@ -18,10 +18,11 @@
                     <div class="column-title">
                         {{column.name}}
                     </div>
-                    <div class="tasks-container" cdkDropList  [cdkDropListData]="column.tasks"
+                    <div class="tasks-container" cdkDropList [cdkDropListData]="column.tasks"
                         (cdkDropListDropped)="drop($event)">
                         <div class="task" *ngFor="let item of column.tasks" cdkDrag>
-                            {{item}} </div>
+                            <h2 edit-text > {{item}} </h2>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -10,14 +10,14 @@ import { Board, Column } from 'src/app/models/board.model';
 })
 export class MainViewComponent {
 
-board: Board= new Board('Test Board',[
-  new Column('Ideas',['some Randome Idea','some Randome Idea34']),
-  new Column('Research',['something to look for','some Topic','thesis']),
-  new Column('Todo',['Get to work', 'Pick up groceries', 'Go home', 'Fall asleep']),
-  new Column('Done',['Get up', 'Brush teeth', 'Take a shower', 'Check e-mail', 'Walk dog'])
-])
+  board: Board = new Board('Test Board', [
+    new Column('Ideas', ['some Randome Idea', 'some Randome Idea34']),
+    new Column('Research', ['something to look for', 'some Topic', 'thesis']),
+    new Column('Todo', ['Get to work', 'Pick up groceries', 'Go home', 'Fall asleep']),
+    new Column('Done', ['Get up', 'Brush teeth', 'Take a shower', 'Check e-mail', 'Walk dog'])
+  ])
 
-  constructor(){}
+  constructor() { }
 
   drop(event: CdkDragDrop<string[]>) {
     if (event.previousContainer === event.container) {

@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { MainViewComponent } from './pages/main-view/main-view.component';
 
 import {DragDropModule } from '@angular/cdk/drag-drop';
+import { ChangeTextDirective } from './directives/change-text.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainViewComponent
+    MainViewComponent,
+    ChangeTextDirective
   ],
   imports: [
     BrowserModule,
